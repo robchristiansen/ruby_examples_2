@@ -26,17 +26,15 @@ def most_used_word_finder(blockOfText)
         counts[word] += 1
     end
     largestValue = 0
-    largestWord = "init"
+    mostUsedWord = "init"
     counts.each do |key, value|
         if value > largestValue
             largestValue = value
             mostUsedWord = key
-        end
-        puts mostUsedWord
+        end 
     end
+    mostUsedWord
 end
-
-
 
 #run it 
 x = most_used_word_finder("A penny wise and a pound foolish makes a man healthy wealthy and wise")
